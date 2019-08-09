@@ -1,1 +1,92 @@
-null
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.header {
+  background: #00425d;
+}
+
+.header .header__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.header .header__block .header__icons {
+  display: flex;
+  align-items: center;
+  width: 35%;
+  justify-content: space-between;
+}
+
+.header .header__block .header__icons .icons__sign,
+.header .header__block .header__icons .icons__basket {
+  display: flex;
+  align-items: center;
+}
+
+.header .header__block .header__icons .icons__sign img,
+.header .header__block .header__icons .icons__basket img {
+  width: 30px;
+}
+
+.header .header__block .header__icons .icons__sign a,
+.header .header__block .header__icons .icons__basket a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.header .header__block .header__icons .icons__sign span,
+.header .header__block .header__icons .icons__basket span {
+  color: #fff;
+}
+
+.header .header__block .header__icons select {
+  height: 30px;
+  width: 150px;
+  font-size: 14px;
+  outline: none;
+}
+
+nav {
+  background: #0b6e96;
+}
+
+nav .menu__links {
+  display: flex;
+  padding: 15px 0;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
+nav .menu__links li {
+  list-style: none;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+nav .menu__links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav .menu__links li:hover {
+  background: #00425d;
+  border-radius: 20px;
+}

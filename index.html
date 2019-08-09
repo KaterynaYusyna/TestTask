@@ -9,41 +9,32 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="format-detection" content="telephone=no">
         <link rel="icon" href="images/tsp.ico" type="image/x-icon">
+        <link href="css/styles.css" rel="stylesheet">
     </head>
     <body>
         <header>
             <div class="main__header container-fluid">
-                <div class="header__menu">
+                <div class="header">
                     <div class="container">
-                        <div class="menu_block">
-                            <div class="menu_links">
-                                <li><a href="">О нас</a></li>
-                                <li>|</li>
-                                <li><a href="">Сеть магазинов</a></li>
-                                <li>|</li>
-                                <li><a href="">Оплата и доставка</a></li>
-                                <li>|</li>
-                                <li><a href="">Новости</a></li>
-                                <li>|</li>
-                                <li><a href="">Контакты</a></li>
-                            </div>
-                            <div class="menu_icons">
-                                <div class="icons_sign">
+                        <div class="header__block">
+                            <div class="header__logo"><a href=""><img src="images/logo-main.png"></a></div>
+                            <div class="header__icons">
+                                <div class="icons__sign">
                                     <img src="images/contact.svg">
                                     <a href="">Sing in</a>
+                                    <span>/</span>
                                     <a href="">Sing up</a>
                                 </div> 
-                                <div class="icons_basket">
+                                <div class="icons__basket">
                                     <img src="images/shopping_bag.svg">
-                                    <a href="">Корзина <span class="count_products">0</span></a>
+                                    <a href="">Корзина <span class="count_products">(0)</span></a>
                                 </div>
-                                <div class="icons_countries">
-                                    <p>Украина</p><img src="images/arrow.png">
-                                    <div class="icons_countries--hover">
-                                        <a href="">Украина</a>
-                                        <a href="">Россия</a>
-                                        <a href="">Польша</a>
-                                    </div>
+                                <div class="icons__countries">
+                                    <select>
+                                        <option>Украина</option>
+                                        <option>Россия</option>
+                                        <option>Польша</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -51,5 +42,19 @@
                 </div>
             </div>
         </header>
+        <nav class="container-fluid">
+            <div class="container">
+                <div class="menu__links">
+                    <li><a href="">О нас</a></li>
+                    <li>|</li>
+                    <li><a href="">Оплата и доставка</a></li>
+                    <li>|</li>
+                    <li><a href="">Новости</a></li>
+                    <li>|</li>
+                    <li><a href="">Контакты</a></li>
+                </div>
+            </div>
+            
+        </nav>
     </body>
 </html>

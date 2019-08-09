@@ -83,4 +83,12 @@ nav {
 .main__carousel {
     margin: 5vw 0;
     display: block;
+    .carousel__prod {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        img {
+
+        }
+    }
 }

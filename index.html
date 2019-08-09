@@ -10,10 +10,10 @@
         <meta name="format-detection" content="telephone=no">
         <link rel="icon" href="images/tsp.ico" type="image/x-icon">
         <link href="css/styles.css" rel="stylesheet">
-        <link href="сss/owl.carousel.min.css" rel="stylesheet">
+        <link href="js/owl/owl.carousel.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="js/owl/owl.carousel.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/owl.carousel.js"></script>
     </head>
     <body>
         <header>
@@ -63,7 +63,7 @@
         <main>
             <section class="container-fluid">
                 <div class="container">
-                    <div class="main__carousel">
+                    <div class="main__carousel owl-carousel owl-theme">
                         <div class="carousel__prod">
                             <img src="images/prod-1.jpg">
                             <h3 class="prod__name">E-Learning, Handbuch fur den Fremdsprachenunterricht</h3>
@@ -131,5 +131,17 @@
                 </div>
             </section>
         </main>
+        <script>
+            $(document).ready(function() {
+                $('.owl-carousel').owlCarousel({
+                    items:4,
+                    margin: 50,
+                    nav: false,
+                    dots: false,
+                    autoplay:true,
+                    autoplayTimeout:5000
+                });
+            });
+        </script>   
     </body>
 </html>

@@ -90,3 +90,8 @@ nav .menu__links li:hover {
   background: #00425d;
   border-radius: 20px;
 }
+
+.main__carousel {
+  margin: 5vw 0;
+  display: block;
+}

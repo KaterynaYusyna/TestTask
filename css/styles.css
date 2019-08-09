@@ -12,7 +12,7 @@ html {
 
 .container {
   margin: 0 auto;
-  width: 80%;
+  width: 70vw;
 }
 
 .header {
@@ -29,7 +29,7 @@ html {
 .header .header__block .header__icons {
   display: flex;
   align-items: center;
-  width: 35%;
+  width: 30vw;
   justify-content: space-between;
 }
 
@@ -91,7 +91,75 @@ nav .menu__links li:hover {
   border-radius: 20px;
 }
 
-.main__carousel {
+.main__carousel.owl-carousel {
   margin: 5vw 0;
   display: block;
+}
+
+.main__carousel.owl-carousel .carousel__prod {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.main__carousel.owl-carousel .carousel__prod img {
+  width: 151px;
+  margin: 0 auto 20px;
+  height: 194px;
+}
+
+.main__carousel.owl-carousel .carousel__prod .prod__name {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.main__carousel.owl-carousel .carousel__prod .prod__desc p {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.main__carousel.owl-carousel .carousel__prod .prod__desc p span {
+  color: #0b6e96;
+  margin-right: 10px;
+}
+
+.main__carousel.owl-carousel .carousel__prod button {
+  font-size: 18px;
+  background: #0b6e96;
+  color: #fff;
+  width: 60%;
+  text-align: center;
+  padding: 6px;
+  border-radius: 35px;
+  border: none;
+  margin: 20px auto 0;
+  display: block;
+}
+
+.footer {
+  background: #00425d;
+  padding: 20px 0;
+}
+
+.footer .footer__block {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer .footer__block .footer__item {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.footer .footer__block .footer__item a {
+  color: #fff;
+  text-decoration: none;
+  line-height: 24px;
+}
+
+.footer .footer__block .footer__social p {
+  color: #fff;
+  margin-bottom: 20px;
 }

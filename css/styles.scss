@@ -64,6 +64,7 @@ nav {
         justify-content: space-between; 
         width: 70%;
         margin: 0 auto;
+        align-items: center;
         li {
             list-style: none;
             color: $white;
@@ -76,6 +77,9 @@ nav {
                 background: $dark-blue;
                 border-radius: 20px;
             }
+        }
+        span {
+            color: $white;
         }
     }
 }
@@ -117,13 +121,91 @@ nav {
             border: none;
             margin: 20px auto 0;
             display: block;
+            &:hover {
+                background: $dark-blue;
+                cursor: pointer;
+            }
         }
+    }
+}
+
+.cards__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .card {
+        padding: 20px;
+        border: 1px solid $grey;
+        width: 15%;
+        border-radius: 7px;
+        &.invalid {
+            border: 1px solid $red; 
+        }
+        button {
+            width: 18%;
+            height: 37px;
+            background: none;
+            border: 1px solid $grey;
+            border-radius: 10px;
+            margin-bottom: 5px;
+            margin-right: 0px;
+            position: relative;
+            outline: none;
+            &:hover {
+                cursor: pointer;
+                background: $grey;
+            }
+            &.choice {
+                &:after {
+                    background-image: url(../images/cross.svg);
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    left: 0;
+                    bottom: 0;
+                    top: 0;
+                    border-radius: 10px;
+                    background-color: rgba(255, 255, 255, 0.8);
+                    z-index: 99999;
+                    background-size: 25px;
+                    background-repeat: space;
+                    background-position: center;
+                }
+            }
+        }
+    }
+}
+
+.cards__error {
+    padding-top: 10px;
+    color: $red;
+    display: none;
+    &.show {
+        display: block;
+    }
+}
+
+.cards__check {
+    font-size: 18px;
+    background: $light-blue;
+    color: $white;
+    width: 20%;
+    text-align: center;
+    padding: 6px;
+    border-radius: 35px;
+    border: none;
+    margin: 20px auto 0;
+    display: block;
+    &:hover {
+        background: $dark-blue;
+        cursor: pointer;
     }
 }
 
 .footer {
     background: $dark-blue;
     padding: 20px 0;
+    margin-top: 5%;
     .footer__block {
         display: flex;
         align-items: flex-start;

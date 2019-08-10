@@ -73,6 +73,7 @@ nav .menu__links {
   justify-content: space-between;
   width: 70%;
   margin: 0 auto;
+  align-items: center;
 }
 
 nav .menu__links li {
@@ -89,6 +90,10 @@ nav .menu__links li a {
 nav .menu__links li:hover {
   background: #00425d;
   border-radius: 20px;
+}
+
+nav .menu__links span {
+  color: #fff;
 }
 
 .main__carousel.owl-carousel {
@@ -136,9 +141,93 @@ nav .menu__links li:hover {
   display: block;
 }
 
+.main__carousel.owl-carousel .carousel__prod button:hover {
+  background: #00425d;
+  cursor: pointer;
+}
+
+.cards__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cards__block .card {
+  padding: 20px;
+  border: 1px solid #d1d1d1;
+  width: 15%;
+  border-radius: 7px;
+}
+
+.cards__block .card.invalid {
+  border: 1px solid #ff0000;
+}
+
+.cards__block .card button {
+  width: 18%;
+  height: 37px;
+  background: none;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  margin-right: 0px;
+  position: relative;
+  outline: none;
+}
+
+.cards__block .card button:hover {
+  cursor: pointer;
+  background: #d1d1d1;
+}
+
+.cards__block .card button.choice:after {
+  background-image: url(../images/cross.svg);
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 99999;
+  background-size: 25px;
+  background-repeat: space;
+  background-position: center;
+}
+
+.cards__error {
+  padding-top: 10px;
+  color: #ff0000;
+  display: none;
+}
+
+.cards__error.show {
+  display: block;
+}
+
+.cards__check {
+  font-size: 18px;
+  background: #0b6e96;
+  color: #fff;
+  width: 20%;
+  text-align: center;
+  padding: 6px;
+  border-radius: 35px;
+  border: none;
+  margin: 20px auto 0;
+  display: block;
+}
+
+.cards__check:hover {
+  background: #00425d;
+  cursor: pointer;
+}
+
 .footer {
   background: #00425d;
   padding: 20px 0;
+  margin-top: 5%;
 }
 
 .footer .footer__block {

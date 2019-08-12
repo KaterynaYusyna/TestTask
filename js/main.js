@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() { 
+    function randomArray() {
+        randomArray = (length, max) => [...new Array(length)]
+        .map(() => Math.round(Math.random() * max));
+
+        let mapArray = new Array();
+        mapArray.push(randomArray(5, 20));
+        mapArray.push(randomArray(5, 20));
+        mapArray.push(randomArray(5, 20));
+        mapArray.push(randomArray(5, 20));
+        mapArray.push(randomArray(5, 20));
+
+        console.log(mapArray);
+    }
+    
     const error = document.querySelector('.cards__error');
     let id;
     allArray = new Set();
@@ -10,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
             cardButton[i].addEventListener('click', function(event){
                 if ( array.length < 5) {
                     this.classList.add('choice');
-                    array.push(this.value);
+                    array.push(Number(this.value));
                     error.classList.remove('show');
                 } else {
                         error.classList.add('show');
@@ -22,17 +36,23 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
                 allArray.add(array);
                 console.log( allArray ); 
-
-                let jsonNumbers = JSON.stringify([...allArray]);
-                console.log(jsonNumbers);
             });
         }
     }
-        
+    const cardsCheck = document.querySelector('.cards__check');
+    cardsCheck.addEventListener('click', function(event){
+        const url = 'https://myFakeApi'
+        axios.get(url)
+        .then(response => console.log(response))
+        .catch(response => (randomArray(), response))
+    });
+
+    
     cardIdentify(1);
     cardIdentify(2);
     cardIdentify(3);
     cardIdentify(4);
     cardIdentify(5);
 
+    
 });
